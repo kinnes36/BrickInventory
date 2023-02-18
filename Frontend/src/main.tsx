@@ -9,6 +9,14 @@ const routes = createBrowserRouter([
     path: "/",
     element: <HomePage />,
   },
+  {
+    path: "/inventory",
+    element: <h1>My lego inventory app</h1>,
+  },
+  {
+    path: "/inventory/manage",
+    element: <h1>My lego brick page</h1>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

@@ -13,10 +13,19 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+
+    public IActionResult index(string id)
     {
-        return View();
+        return View("index");
     }
+
+
+
+    // [Route("Home/Bricks")]
+    // public IActionResult Bricks()
+    // {
+    //     return View("index");
+    // }
 
     public IActionResult Privacy()
     {
